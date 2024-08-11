@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbd1i2yxos7jj"]
+
+[ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_pda7a"]
+[ext_resource type="PackedScene" uid="uid://bvkhux1j4ioox" path="res://scenes/chocolate.tscn" id="3_ran3a"]
+[ext_resource type="PackedScene" uid="uid://dujrspsdqyao5" path="res://scenes/pixel.tscn" id="4_v64rn"]
+[ext_resource type="FontFile" uid="uid://bcj4hcds54pu7" path="res://assets/PixelOperator8-Bold.ttf" id="5_211m5"]
+
+[node name="end" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_pda7a")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -100
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -467.0
+offset_top = -92.0
+offset_right = -147.0
+offset_bottom = 119.0
+scale = Vector2(6.56, 3.68)
+color = Color(0, 0, 0, 1)
+
+[node name="chocolate" parent="." instance=ExtResource("3_ran3a")]
+position = Vector2(491, 381)
+
+[node name="pixel" parent="." instance=ExtResource("4_v64rn")]
+position = Vector2(493, 324)
+scale = Vector2(3.875, 3.875)
+frame_progress = 0.812056
+
+[node name="Label" type="Label" parent="."]
+offset_left = 364.0
+offset_top = 217.0
+offset_right = 663.0
+offset_bottom = 360.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_211m5")
+theme_override_font_sizes/font_size = 46
+text = "The End"

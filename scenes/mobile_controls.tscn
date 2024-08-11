@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdlrq4wt0ruhi"]
+
+[ext_resource type="Texture2D" uid="uid://dnexw63sybcbh" path="res://assets/image.png" id="1_3bvwx"]
+
+[node name="MobileControls" type="CanvasLayer"]
+
+[node name="Right" type="TouchScreenButton" parent="."]
+modulate = Color(0.517184, 0.517184, 0.517184, 1)
+position = Vector2(897, 451)
+scale = Vector2(0.255859, 0.238345)
+texture_normal = ExtResource("1_3bvwx")
+action = "move_right"
+
+[node name="Left" type="TouchScreenButton" parent="."]
+modulate = Color(0.517647, 0.517647, 0.517647, 1)
+position = Vector2(873, 573)
+rotation = -3.14033
+scale = Vector2(0.236357, 0.236357)
+texture_normal = ExtResource("1_3bvwx")
+action = "move_left"
+
+[node name="Jump" type="TouchScreenButton" parent="."]
+modulate = Color(0.517647, 0.517647, 0.517647, 1)
+position = Vector2(25, 586)
+rotation = -1.57055
+scale = Vector2(0.250771, 0.249606)
+texture_normal = ExtResource("1_3bvwx")
+action = "jump"

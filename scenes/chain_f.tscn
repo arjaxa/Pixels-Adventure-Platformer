@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://c3hyqt8xjndtt"]
+
+[ext_resource type="Texture2D" uid="uid://b1sh01lmy61xq" path="res://assets/tile_0005.png" id="1_c2f1p"]
+[ext_resource type="Texture2D" uid="uid://b6w5evile1f55" path="res://assets/tile_0024.png" id="2_txwej"]
+[ext_resource type="Texture2D" uid="uid://bmviimjeeskcm" path="res://assets/tile_0026.png" id="3_2qi8w"]
+[ext_resource type="Texture2D" uid="uid://i3ggaitdseyj" path="res://assets/tile_0045.png" id="4_iulut"]
+[ext_resource type="Texture2D" uid="uid://b5rg4tdl6n0bu" path="res://assets/tile_0046.png" id="5_g2f5i"]
+[ext_resource type="Texture2D" uid="uid://bgppyq3kiqdl1" path="res://assets/tile_0044.png" id="6_p1elt"]
+[ext_resource type="Texture2D" uid="uid://dqil1tafvlc34" path="res://assets/tile_0023.png" id="7_lqy1n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1gyio"]
+size = Vector2(48, 5)
+
+[node name="ChainF" type="AnimatableBody2D"]
+
+[node name="h-m" type="Sprite2D" parent="."]
+texture = ExtResource("1_c2f1p")
+
+[node name="h-l" type="Sprite2D" parent="."]
+position = Vector2(-14, 14)
+texture = ExtResource("2_txwej")
+
+[node name="h-r" type="Sprite2D" parent="."]
+position = Vector2(14, 14)
+texture = ExtResource("3_2qi8w")
+
+[node name="f-m" type="Sprite2D" parent="."]
+position = Vector2(0, 30)
+texture = ExtResource("4_iulut")
+
+[node name="f-r" type="Sprite2D" parent="."]
+position = Vector2(16, 30)
+texture = ExtResource("5_g2f5i")
+
+[node name="f-l" type="Sprite2D" parent="."]
+position = Vector2(-16, 30)
+texture = ExtResource("6_p1elt")
+
+[node name="ch" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+texture = ExtResource("7_lqy1n")
+
+[node name="ch2" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("7_lqy1n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 24.5)
+shape = SubResource("RectangleShape2D_1gyio")

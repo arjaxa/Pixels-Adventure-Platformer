@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvkhux1j4ioox"]
+
+[ext_resource type="Texture2D" uid="uid://k2gjqx7de4p0" path="res://assets/chocolate.png" id="1_4tcx8"]
+
+[node name="chocolate" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -2.03416
+scale = Vector2(0.0539624, 0.0539624)
+texture = ExtResource("1_4tcx8")

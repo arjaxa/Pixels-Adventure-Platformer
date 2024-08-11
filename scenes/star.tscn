@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwvuiohagwxf5"]
+
+[ext_resource type="Texture2D" uid="uid://dcjfxjj0akbr7" path="res://assets/tile_0000.png" id="1_m6ny2"]
+[ext_resource type="Texture2D" uid="uid://b5v4ffgrfxiib" path="res://assets/tile_0001.png" id="2_6qi50"]
+[ext_resource type="Texture2D" uid="uid://cj80o5fbqd1fj" path="res://assets/tile_0002.png" id="3_xhlhm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n3q2a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_m6ny2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6qi50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xhlhm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Star" type="AnimatedSprite2D"]
+scale = Vector2(0.375, 0.375)
+sprite_frames = SubResource("SpriteFrames_n3q2a")
+autoplay = "default"
+frame_progress = 0.484911

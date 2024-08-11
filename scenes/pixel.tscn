@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://dujrspsdqyao5"]
+
+[ext_resource type="Texture2D" uid="uid://34wqoa5jpl1p" path="res://assets/monochrome_tilemap_transparent.png" id="1_8kqcm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mir60"]
+atlas = ExtResource("1_8kqcm")
+region = Rect2(102, 204, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_885py"]
+atlas = ExtResource("1_8kqcm")
+region = Rect2(102, 238, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1rfb"]
+atlas = ExtResource("1_8kqcm")
+region = Rect2(102, 255, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iet4f"]
+atlas = ExtResource("1_8kqcm")
+region = Rect2(102, 221, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a4ljl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mir60")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_885py")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q1rfb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iet4f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="pixel" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_a4ljl")
+autoplay = "default"
+frame_progress = 0.995077
